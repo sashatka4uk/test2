@@ -1,0 +1,7 @@
+@import 'varibles'; //Змінні
+@import 'base'; // Загальні( доп класи)
+@import 'typography'; // Типографія ( шрифти, колір і тд)
+@import 'components/buttons'; // Стилі для кнопок
+
+// Стилі для сторінки 
+@import 'pages/homePage'; // Головна сторінка

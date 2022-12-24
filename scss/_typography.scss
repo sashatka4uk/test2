@@ -1,0 +1,341 @@
+/////////////////////////////////////////////////////////
+/// Головна сторінка
+/////////////////////////////////////////////////////////
+.hero {
+
+    &__header {
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 66px;
+        color: $col-secondary-white;
+        text-align: center;
+
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $col-secondary-white;
+    }
+}
+
+// ABOUT
+.about {
+    &__heading {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 5.5rem;
+        text-align: left;
+        color: $col-primary-dark;
+
+    }
+
+    &__paragraph,
+    &__feature {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: left;
+    }
+
+    &__paragraph {
+        color: $col-secondary-grey;
+
+    }
+
+    &__feature {
+        color: $col-primary-dark;
+
+    }
+}
+
+// Секція FEATURE
+
+.feature {
+    &__heading {
+
+        font-size: 5rem;
+        font-weight: 800;
+        text-align: center;
+        color: $col-primary-dark;
+
+    }
+
+    &__name {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.3rem;
+        text-align: left;
+        color: $col-primary-dark;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: left;
+        color: $col-secondary-grey;
+
+    }
+
+
+}
+
+// Секція Video
+
+.video {
+
+
+    &__header {
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 6.6rem;
+        text-align: left;
+        color: $col-secondary-white;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.9rem;
+        text-align: left;
+        color: $col-secondary-white;
+    }
+
+    &__control {
+        &--info {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 3rem;
+            text-align: left;
+            color: $col-primary-dark;
+
+            & span {
+                font-size: 2rem;
+                font-weight: 800;
+                line-height: 3rem;
+                text-align: left;
+                color: $col-primary-blue;
+
+            }
+        }
+    }
+}
+
+//  Про соціальні мережі 
+
+.sotial {
+
+
+    &__header {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 5.5rem;
+        text-align: left;
+        color: $col-primary-dark;
+    }
+
+
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: left;
+    color: $col-secondary-grey;
+}
+
+//  Секція  Work Progress 
+.works {
+
+
+    &__header {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 5.5rem;
+        text-align: left;
+        color: $col-secondary-white
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: left;
+        color: $col-secondary-white
+    }
+
+
+}
+
+// Карточки
+.card {
+
+
+    &__num {
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: left;
+
+        &--dark {
+            color: $col-primary-dark;
+        }
+
+        &--blue {
+            color: $col-primary-blue
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.3rem;
+        text-align: left;
+        color: $col-primary-dark;
+    }
+
+    &__paragraph {
+        --color-paragraph: #808080;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: left;
+        color: var(--color-paragraph);
+    }
+}
+
+// Секція з відгуком
+.testemonial {
+    &__header {
+        font-size: 5rem;
+        font-weight: 800;
+
+    }
+
+
+    &__name {
+
+
+
+        font-size: 2rem;
+        font-weight: 400;
+
+        & span {
+
+            font-size: 2rem;
+            font-weight: 800;
+        }
+    }
+
+
+
+    &__text {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 3.8rem;
+        text-align: center;
+
+    }
+}
+
+// Досягнення 
+.achive {
+    &__header {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 5.5rem;
+        text-align: center;
+        color: $col-primary-dark;
+
+    }
+
+
+
+    &__heading {
+        font-size: 5rem;
+        font-weight: 800;
+        text-align: center;
+        color: $col-primary-blue;
+    }
+
+    &__text {
+
+        font-size: 2rem;
+        font-weight: 400;
+
+        text-align: center;
+
+    }
+}
+
+// План
+
+.plan {
+    &__header {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 3.3rem;
+        text-align: center;
+        color: $col-primary-dark;
+    }
+}
+
+// БЛОГ
+.blog {
+    &__heading {}
+
+    &__text {}
+
+    &__header {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 55px;
+        text-align: left;
+        color: $col-primary-dark;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-align: left;
+        color: $col-secondary-grey--2;
+    }
+}
+
+// Пости
+.post {
+
+    &__date,
+    &__time,
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: left;
+        color: $col-secondary-grey--2;
+    }
+
+
+
+    &__header {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.6rem;
+        text-align: left;
+        color: $col-primary-dark;
+    }
+
+
+    &__link:link,
+    &__link:visited {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: left;
+        color: $col-primary-dark;
+        text-decoration: none;
+    }
+}
+
+// Секція з пробним періодом

@@ -1,0 +1,129 @@
+// Кнопки 
+
+
+.btn {
+
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+
+    }
+
+
+    &__small {
+        font-size: 1.8rem;
+        padding: 2rem 4.7rem;
+        border-radius: 6.2rem;
+        font-size: 1.8rem;
+        border: 1px solid $col-btn-border;
+
+        &--dark {
+            background-color: $col-primary-dark;
+            color: $col-secondary-white;
+        }
+
+        &--white {
+            background-color: $col-secondary-white;
+            color: $col-primary-dark;
+        }
+
+        &--blue {
+            background-color: $col-primary-blue;
+            color: $col-secondary-white;
+        }
+    }
+
+
+
+
+    &__medium {
+
+        padding: 2.5rem 6.2rem;
+        border-radius: 5rem;
+        font-size: 2rem;
+        border: 1px solid $col-btn-border;
+
+
+
+        &--dark,
+        &--blue {
+            color: $col-secondary-white;
+        }
+
+        &--dark {
+            background-color: $col-primary-dark;
+        }
+
+        &--blue {
+            background-color: $col-primary-blue;
+        }
+    }
+
+    &__large {
+
+        border-radius: 5rem;
+        padding: 2.55rem 4.75rem;
+        font-size: 2rem;
+        border: 1px solid $col-btn-border;
+
+        &--dark {
+            background-color: $col-primary-dark;
+            color: $col-secondary-white;
+        }
+
+        &--white {
+            background-color: $col-secondary-white;
+            color: $col-primary-dark;
+        }
+    }
+}
+
+// Radio кнопки 
+.trial {
+    background-color: $col-secondary-grey--2;
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        font-family: Mulish;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    &__btn {
+        width: 22rem;
+        height: 22rem;
+        border: 7px solid $col-secondary-white;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            width: 8rem;
+            height: 8rem;
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            background-color: $col-primary-blue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+
+
+}
+
+.trial__input:checked~.trial__label .trial__btn::after {
+    opacity: 1;
+}

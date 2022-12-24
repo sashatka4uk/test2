@@ -1,0 +1,43 @@
+// Загальні настройки і ресети, допоміжні класи
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: $ff-Mulish;
+    font-weight: 800;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.tag {
+    display: inline-block;
+    padding: 1.4rem 3.8rem 1.5rem;
+    border-radius: 24px;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+
+
+
+
+    &--white {
+        background: $col-secondary;
+        color: $col-primary-dark;
+    }
+
+
+}

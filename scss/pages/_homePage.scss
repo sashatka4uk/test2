@@ -1,0 +1,647 @@
+// Стилі для головної сторінки
+
+.hero {
+    max-width: 172rem;
+    // height: 108.5rem;
+    // background-image: url(../img/background/banner.png);
+    // // background-size: cover;
+    // // background-position: center;
+
+    // background-repeat: no-repeat;
+    // border-radius: 2rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8.7rem;
+    position: relative;
+    // background-color: $col-primary-blue;
+
+
+    &__hero {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        height: 86.8rem;
+        max-width: 172rem;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 107.5rem;
+        padding-top: 12.8rem;
+    }
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 4.4rem;
+    }
+
+    &__btn {
+        margin-bottom: 5.7rem;
+    }
+
+    &__img {
+        position: relative;
+    }
+
+
+    &__imge {
+        max-width: 100%;
+
+
+    }
+
+    &__shadow {
+        position: absolute;
+        opacity: 0.5;
+        filter: blur(100px);
+        height: 7.6rem;
+        width: 88.1rem;
+        display: inline-block;
+        z-index: -1;
+
+        &--blue {
+            background: $shadow-blue;
+            bottom: -10%;
+            left: 0;
+        }
+
+        &--pink {
+            background: $shadow-pink;
+            bottom: -10%;
+            right: 0;
+        }
+    }
+
+}
+
+// Лого компаній
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11.2rem;
+    flex-wrap: wrap;
+    margin-bottom: 20.4rem;
+}
+
+// ABOUT
+
+.about {
+    display: grid;
+    grid-template-columns: 58.2rem 97.6rem;
+    max-width: 155.8rem;
+    margin-bottom: 18rem;
+
+    &__text {
+        height: 57.1rem;
+        max-width: 53.8rem;
+        align-self: center;
+    }
+
+    &__heading {
+        margin-bottom: 3.1rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 2.8rem;
+    }
+
+    &__list {
+        margin-bottom: 5.3rem;
+        list-style: none;
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+
+    }
+
+    &__feature {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2.6rem;
+        }
+    }
+
+
+
+    &__img {
+        height: 67rem;
+        width: 97.6rem;
+    }
+
+}
+
+// Секція FEATURE
+
+.feature {
+    margin-bottom: 20.9rem;
+
+    &__heading {
+        margin-bottom: 5.3rem;
+    }
+
+    &__tag {
+        margin-bottom: 3.4rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 44.7rem);
+        column-gap: 2.9rem;
+        row-gap: 3rem;
+        align-content: center;
+        justify-content: center
+    }
+
+    &__container {
+        padding: 3.6rem 4rem;
+        border: 1px solid $col-card-border;
+        border-radius: 20px;
+        width: 44.7rem;
+
+
+    }
+
+    &__name {
+        margin-bottom: 1rem;
+
+    }
+
+    &__paragraph {
+        margin-bottom: 3.4rem;
+    }
+
+    &__name,
+    &__paragraph {
+        padding-right: 1.7rem;
+    }
+
+    &__control {
+        border-top: 1px solid $col-card-border;
+        padding-top: 2.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    &__icon {
+        height: 5.9rem;
+        width: 5.6rem;
+
+
+    }
+}
+
+// Секція Video
+
+.video {
+
+    position: relative;
+    // background-image: url(../img/background/video.svg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 19.3rem;
+
+    &__bacground {
+        position: absolute;
+
+        z-index: -1;
+        // height: 68.9rem;
+        // max-width: 192rem;
+
+
+        &--img {
+            width: 100vw;
+        }
+    }
+
+    &__container {
+        width: 140rem;
+        padding-top: 16.3rem;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5.1rem;
+    }
+
+    &__content {
+        width: 54.5rem;
+
+
+
+
+        &__header {
+            margin-bottom: 1rem;
+        }
+
+
+    }
+
+    &__img {
+        width: 140rem;
+    }
+
+    &__video {
+        position: relative;
+    }
+
+    &__control {
+        position: absolute;
+        bottom: 6%;
+        left: 2%;
+        // width: 38.4rem;
+        padding: 1rem 3.9rem 1rem 1.5rem;
+        background: $col-secondary-white;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        gap: 2.2rem;
+
+
+
+
+        &--btn {
+            height: 9.9rem;
+            width: 9.9rem;
+            border-radius: 50%;
+            background: $col-secondary;
+            position: relative;
+            cursor: pointer;
+
+            &--play {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+}
+
+//  Про соціальні мережі 
+
+.sotial {
+    width: 118.9rem;
+    height: 36.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    margin-bottom: 19.7rem;
+
+    &__text {
+        &>*:not(:last-child) {
+            margin-bottom: 3.1rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 538px;
+    }
+
+
+
+    &__img {
+        height: 36.3rem;
+        width: 59.1rem;
+
+    }
+
+    &__btn {
+        align-self: baseline;
+    }
+}
+
+//  Секція  Work Progress 
+.works {
+    max-width: 140rem;
+    margin-bottom: 20rem;
+
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 55rem 77.6rem;
+        gap: 5.1rem;
+    }
+
+    &__text {
+        background-image: url(../img/background/feature.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 9.5rem 6.3rem;
+        border-radius: 20px;
+    }
+
+    &__header {
+        margin-bottom: 2.2rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 3.7rem;
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(2, 37.3rem);
+        column-gap: 3rem;
+        row-gap: 7rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// Карточки
+.card {
+    &__num {
+        margin-bottom: 2.4rem;
+
+    }
+
+    &__title {
+        margin-bottom: 1.1rem;
+    }
+
+}
+
+// Секція з відгуком
+.testemonial {
+
+    max-width: 140rem;
+    padding: 14rem 8.5rem;
+    background-color: $col-secondary;
+    border-radius: 20px;
+    margin-bottom: 18.1rem;
+
+
+    &__box {
+        position: relative;
+        border-bottom: 1px solid $col-card-border;
+        margin-bottom: 9.2rem;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            padding: 2.8rem 3.4rem;
+            height: 2rem;
+            width: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+        }
+
+        &::before {
+            top: 47%;
+            left: 2%;
+            background-image: url(../icon/left-arr.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            color: $col-secondary-white;
+            background-color: $col-primary-blue;
+
+        }
+
+        &::after {
+            top: 47%;
+            right: -5%;
+            background-image: url(../icon/right-arr.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            color: $col-primary-dark;
+            background-color: $col-secondary-white;
+        }
+
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 5.4rem;
+    }
+
+    &__testemonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 84.5rem;
+    }
+
+    &__person {
+        width: 14.3rem;
+        margin-bottom: 3.5rem;
+        position: relative;
+
+        // &::before {
+
+        //     position: absolute;
+        //     content: '“';
+        //     height: 2.8rem;
+        //     width: 2.8rem;
+        //     padding: 1.4rem;
+
+        //     display: inline-block;
+        //     background-color: $col-primary-blue;
+        //     font-size: 6rem;
+        //     font-weight: 700;
+        //     color: $col-secondary-white;
+        //     border-radius: 50%;
+
+
+        // }
+    }
+
+    &__img {
+        height: 14.3rem;
+        width: 14.3rem;
+
+
+    }
+
+    &__name {
+        margin-bottom: 1rem;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2.6rem;
+    }
+
+    &__icon {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    &__text {
+        margin-bottom: 8.23rem;
+    }
+}
+
+// Досягнення 
+.achive {
+    &__header {
+        margin-bottom: 8rem;
+    }
+
+    &__counter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10.5rem;
+
+    }
+
+    &__info {}
+
+    &__heading {}
+
+    &__text {}
+}
+
+// План
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+
+
+    border-top: 1px solid $col-card-border;
+
+    &__header {
+        margin-top: 4.8rem;
+    }
+
+
+}
+
+// БЛОГ
+.blog {
+    max-width: 140.2rem;
+    margin-bottom: 14.9rem;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4.3rem;
+    }
+
+    &__text {
+        max-width: 74.7rem;
+    }
+
+    &__header {
+        margin-bottom: 2.3rem;
+    }
+
+    &__paragraph {}
+}
+
+// Пости
+.post {
+    display: grid;
+    grid-template-columns: repeat(3, 43.6rem);
+    column-gap: 4.7rem;
+
+    &__card {}
+
+    &__image {
+        margin-bottom: 2.7rem;
+        position: relative;
+
+
+        &:before {
+            bottom: 6%;
+            left: 6%;
+            position: absolute;
+            display: inline-block;
+            padding: 1.4rem 3.5rem;
+            content: 'Analyze';
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-align: left;
+            color: $col-primary-dark;
+            background-color: $col-secondary-white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+            border-radius: 24px;
+
+        }
+
+    }
+
+    &__img {
+        max-width: 43.4rem;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2.4rem;
+    }
+
+    &__date {}
+
+    &__time {}
+
+    &__text {}
+
+    &__header {
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 1.7rem;
+    }
+
+    &__link {}
+}
+
+.post__card:nth-child(odd) {
+
+    // На кожній не парній карточці в пості буде добавлятись нова категорія бля фото
+    //  з назвою Marketing
+    .post__image::after {
+        bottom: 6%;
+        left: 40%;
+        position: absolute;
+        display: inline-block;
+        padding: 1.4rem 3.5rem;
+        content: 'Marketing';
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: left;
+        color: $col-primary-dark;
+        background-color: $col-secondary-white;
+        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+    }
+}
+
+// Секція з пробним періодом
