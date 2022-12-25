@@ -1,6 +1,44 @@
 /////////////////////////////////////////////////////////
 /// Головна сторінка
 /////////////////////////////////////////////////////////
+
+.nav {
+    &__logo {
+        font-size: 3rem;
+        font-weight: 800;
+        color: $col-primary-dark;
+    }
+
+    & .active {
+        color: $col-primary-blue;
+    }
+
+    &__icon {}
+
+    &__list {}
+
+    &__element {}
+
+    &__active {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $col-nav;
+
+
+    }
+
+    &__page {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $col-primary-dark;
+    }
+
+    &__shop {}
+}
+
 .hero {
 
     &__header {
@@ -339,3 +377,153 @@
 }
 
 // Секція з пробним періодом
+.trial {
+
+    &__header {
+        font-size: 5rem;
+        font-weight: 800;
+        text-align: left;
+        color: $col-secondary-white;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: $col-secondary-white;
+    }
+
+}
+
+// Форма
+.form {
+    &__em {}
+
+    &__email {
+        font-family: Mulish;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: left;
+        color: $col-primary-dark;
+
+        &::-webkit-input-placeholder {
+            color: $col-primary-dark;
+        }
+
+        &--btn {
+            font-family: Mulish;
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            color: $col-secondary-white;
+        }
+    }
+
+    &__radio {}
+
+    &__btn {
+        &--input {}
+
+        &--label {}
+
+    }
+
+    &__custom {}
+}
+
+// Футер 
+.footer {
+    &__link {
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 800;
+        color: $col-primary-dark;
+    }
+
+    &__pages {}
+
+    &__copyright {
+        &--text {
+            font-family: Mulish;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $col-secondary-grey--2;
+        }
+    }
+
+
+
+}
+
+.resources,
+.utility {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    color: $col-primary-dark;
+}
+
+.resources {
+
+
+    &__page {
+        list-style: none;
+
+    }
+
+    &__link {
+        list-style: none;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: left;
+        color: $col-secondary-grey--2;
+        text-decoration: none;
+        line-height: 4rem;
+
+    }
+
+}
+
+.utility {
+    &__page {
+        list-style: none;
+    }
+
+    &__link {
+        list-style: none;
+
+        line-height: 4rem;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: left;
+        color: $col-secondary-grey--2;
+        text-decoration: none;
+    }
+}
+
+.startup {
+
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $col-secondary-white;
+    }
+
+    &__dollar {
+        font-size: 6rem;
+        font-weight: 900;
+        color: $col-secondary-white;
+    }
+
+    &__li {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $col-secondary-white;
+        line-height: 3.9rem;
+    }
+}

@@ -24,9 +24,40 @@
     <a href="" class="btn btn__large btn__large--dark">Large Button Style</a> -->
 
 
-    <section class="nav">
+    <nav class="nav center">
         <!-- Навігація -->
-    </section>
+        <a href="index.html" class="nav__logo">
+            <img class="nav__icon" src="icon/logo.svg" alt="Site logo">
+            Technologycal
+        </a>
+        <ul class="nav__list">
+            <li class="nav__element">
+                <p class="nav__active  active">01</p>
+                <a href="index.html" class="nav__page">Home</a>
+            </li>
+            <li class="nav__element">
+                <p class="nav__active ">02</p>
+                <a href="#" class="nav__page">Features</a>
+                <img class="nav__more" src="icon/down.svg" alt="Menu list icon">
+            </li>
+            <li class="nav__element">
+                <p class="nav__active ">03</p>
+                <a href="#" class="nav__page">Resources</a>
+            </li>
+            <li class="nav__element">
+                <p class="nav__active ">04</p>
+                <a href="#" class="nav__page">Pricing</a>
+            </li>
+            <li class="nav__element">
+                <p class="nav__active ">05</p>
+                <a href="#" class="nav__page">Blog</a>
+            </li>
+        </ul>
+        <div class="nav__control">
+            <img class="nav__shop" src="icon/cart.svg" alt="Cart icon">
+            <a href="" class="btn btn__small btn__small--white">Sign In</a>
+        </div>
+    </nav>
     <main>
         <section class="hero">
             <!-- Секція з головним фото і заголовком -->
@@ -167,7 +198,7 @@
         <section class="video ">
             <div class="video__bacground">
 
-                <img class="video__bacground--img" src="img/background/video.svg" alt="Section video background">
+                <img class="video__bacground--img" src="img/background/video.png" alt="Section video background">
             </div>
             <!-- Секція з відео -->
             <div class="video__container center ">
@@ -385,23 +416,152 @@
             </section>
         </section>
 
-        <section class="trial">
-            <div class="trial__radio">
-                <input type="radio" class="trial__input" id="1" name="7day">
-                <label for="1" class="trial__label">
-                    <span class="trial__btn"></span> Free 7-day trial
-                </label>
+
+        <section class="trial center">
+            <!-- Секція з формою -->
+            <div class="trial__text">
+                <header class="trial__header">Start your 7-day free trial</header>
+                <p class="trial__paragraph">Felix can help bring your dream website to life with ease.</p>
             </div>
-            <div class="trial__radio">
-                <input type="radio" class="trial__input" id="nocredit" name="7day">
-                <label for="nocredit" class="trial__label">
-                    <span class="trial__btn"></span> No credit card required
-                </label>
+            <form action="#" class="form">
+                <div class="form__em">
+                    <input class="form__email" type="email" placeholder="Enter your Email" id="email" required>
+                    <button class="form__email--btn" type="submit">Start</button>
+                </div>
+                <div class="form__radio">
+                    <div class="form__btn">
+                        <!-- 01 -->
+                        <input class="form__btn--input" type="radio" name="radio" id="7day">
+                        <label class="form__btn--label" for="7day">
+                            <span class="form__custom"></span> Free 7-day trial
+                        </label>
+                    </div>
+                    <div class="form__btn">
+                        <!-- 02 -->
+                        <input class="form__btn--input" type="radio" name="radio" id="nocredit">
+                        <label class="form__btn--label" for="nocredit">
+                            <span class="form__custom"></span> No credit card required
+                        </label>
+                    </div>
+                    <div class="form__btn">
+                        <!-- 03 -->
+                        <input class="form__btn--input" type="radio" name="radio" id="cancel">
+                        <label class="form__btn--label" for="cancel">
+                            <span class="form__custom"></span> Cancel anytime
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="trial__imge">
+                <img class="trial__img trial__img--1" src="img/components/person.png" alt="Profile picture">
+                <img class="trial__img trial__img--2" src="img/components/post-detail.png" alt="Post detail">
+                <img class="trial__img trial__img--3" src="img/components/hastag.png" alt="Hastag feature">
+                <img class="trial__img trial__img--4" src="img/components/link.png" alt="Smart link">
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer center">
         <!-- Футер -->
+
+        <div class="footer__main">
+            <a class="footer__link" href="#">
+                <img class="footer__logo" src="icon/logo.svg" alt="Site logo">
+                Technologycal</a>
+            <a href="" class="footer__btn btn btn__large btn__large--white">See our Case Studies</a>
+        </div>
+
+        <div class="footer__content">
+            <div class="footer__pages">
+                <div class="resources">
+                    <heading class="resources__heading">Resources</heading>
+                    <div class="resources__flex">
+                        <ul class="resources__pages">
+                            <li class="resources__page"><a href="index.html" class="resources__link">Home</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">About</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Contact</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Blog</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Blog Post</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Pricing</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Pricing Single</a></li>
+                            <a href=""></a>
+                        </ul>
+                        <ul class="resources__pages">
+                            <li class="resources__page"><a href="#" class="resources__link">Blog</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Blog Post</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Why choose us</a></li>
+                            <li class="resources__page"><a href="#" class="resources__link">Case studies</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="utility">
+                    <heading class="utility__heading">Utility Pages
+                    </heading>
+                    <ul class="utility__pages">
+                        <li class="utility__page"><a href="#" class="utility__link">Start here</a></li>
+                        <li class="utility__page"><a href="#" class="utility__link">Style guide</a></li>
+                        <li class="utility__page"><a href="#" class="utility__link">Password protected</a></li>
+                        <li class="utility__page"><a href="#" class="utility__link">404 Not found</a></li>
+                        <li class="utility__page"><a href="#" class="utility__link">Licenses</a></li>
+                        <li class="utility__page"><a href="#" class="utility__link">Changelog</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="startup">
+                <div class="startup__price">
+                    <img class="startup__popular" src="img/background/popular.png" alt="Popular icon">
+                    <heading class="startup__heading">Startup
+                        <span class="startup__dollar">$25</span>
+                    </heading>
+                    <a href="#" class="startup__btn btn btn__small btn__small--dark">Choose Plan</a>
+
+                </div>
+                <div class="startup__feature">
+                    <ul class="startup__list">
+                        <li class="startup__li">
+                            <img src="icon/check-list.svg" alt="Check list icon">
+                            3 Social Set
+                        </li>
+                        <li class="startup__li">
+                            <img src="icon/check-list.svg" alt="Check list icon">
+                            5 users
+                        </li>
+                        <li class="startup__li">
+                            <img src="icon/check-list.svg" alt="Check list icon">
+                            Phone Support
+                        </li>
+                        <li class="startup__li">
+                            <img src="icon/check-list.svg" alt="Check list icon">
+                            startupning & publishing
+                        </li>
+                        <li class="startup__li">
+                            <img src="icon/check-list.svg" alt="Check list icon">
+                            Analytics tools
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright--text">Зроблено 25.12.2022</p>
+            <div class="footer__sotial">
+                <a class="footer__links" href="#">
+                    <img src="icon/sotial/instagram.svg" alt="Instagram logo">
+                </a>
+                <a class="footer__links" href="#">
+                    <img src="icon/sotial/facebook.svg" alt="Facebook logo">
+                </a>
+                <a class="footer__links" href="#">
+                    <img src="icon/sotial/twiter.svg" alt="Twiter logo">
+                </a>
+                <a class="footer__links" href="#">
+                    <img src="icon/sotial/pintrest.svg" alt="Pintrest logo">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 
